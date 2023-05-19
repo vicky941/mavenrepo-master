@@ -23,6 +23,11 @@
           <failOnMissingWebXml>false</failOnMissingWebXml>
         </configuration>
       </plugin>
+      <plugin>
+      <groupId>org.sonarsource.scanner.maven</groupId>
+      <artifactId>sonar-maven-plugin</artifactId>
+      <version>3.9.1.2184</version>
+    </plugin>
     </plugins>
   </build>
    <distributionManagement>
@@ -37,6 +42,10 @@
             <url>http://34.219.201.54:8081/repository/student-snap/</url>
         </snapshotRepository>
     </distributionManagement>
+  <properties>
+  <!-- Other properties -->
+  <sonar.host.url>http://54.218.144.202:9000</sonar.host.url>
+</properties>
   <dependencies>
   	<dependency>
   		<groupId>javax.servlet</groupId>
