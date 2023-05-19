@@ -28,13 +28,13 @@
    <distributionManagement>
         <repository>
             <id>deployment</id>
-            <name>student snapshots </name>
-            <url>http://35.90.73.219:8081/repository/student-snap/</url>
+            <name>student snapshots Releases<</name>
+            <url>http://35.90.73.219:8081/repository/student-rel/</url>
         </repository>
         <snapshotRepository>
             <id>deploymen</id>
-            <name>student Snapshot Releases</name>
-            <url>http://35.90.73.219:8081/repository/student-rel/</url>
+            <name>student Snapshot /name>
+            <url>http://35.90.73.219:8081/repository/student-snap/</url>
         </snapshotRepository>
     </distributionManagement>
   <dependencies>
