@@ -27,12 +27,12 @@
   </build>
    <distributionManagement>
         <repository>
-            <id>nexus</id>
+            <id>deployment</id>
             <name>student snapshots </name>
             <url>http://:8081/repository/student-rel/</url>
         </repository>
         <snapshotRepository>
-            <id>nexus</id>
+            <id>deploymen</id>
             <name>student Snapshot Releases</name>
             <url>http://:8081/repository/student-snap/</url>
         </snapshotRepository>
