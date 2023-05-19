@@ -32,7 +32,7 @@
             <url>http://35.90.73.219:8081/repository/student-rel/</url>
         </repository>
         <snapshotRepository>
-            <id>deploymen</id>
+            <id>deployment</id>
             <name>student Snapshot </name>
             <url>http://35.90.73.219:8081/repository/student-snap/</url>
         </snapshotRepository>
