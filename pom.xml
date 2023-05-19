@@ -42,6 +42,9 @@
   		<groupId>javax.servlet</groupId>
   		<artifactId>javax.servlet-api</artifactId>
   		<version>3.0.1</version>
+      <sonar.host.url>http://35.90.210.158:9000/</sonar.host.url>
+      <username>admin</username>
+      <password>admin1</password>
   	</dependency>
   </dependencies>
 </project>
