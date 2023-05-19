@@ -41,10 +41,13 @@
   	<dependency>
   		<groupId>javax.servlet</groupId>
   		<artifactId>javax.servlet-api</artifactId>
-  		<version>3.0.1</version>
-      <sonar.host.url>http://35.90.210.158:9000/</sonar.host.url>
-      <username>admin</username>
-      <password>admin1</password>
+      <version>3.0.1</version>
   	</dependency>
+    <properties>
+      <sonar.host.url>http://35.90.210.158:9000/</sonar.host.url>
+      <sonar.login>admin</sonar.login>
+      <sonar.password>admin1</sonar.password>
+      
+      </properties>
   </dependencies>
 </project>
