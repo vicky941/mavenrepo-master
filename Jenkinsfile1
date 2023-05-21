@@ -10,7 +10,17 @@ pipeline {
                 checkout([$class: 'GitSCM', branches: [[name: '*/master']], doGenerateSubmoduleConfigurations: false, extensions: [], submoduleCfg: [], userRemoteConfigs: [[credentialsId: '', url: 'https://github.com/bvenkydevops/mavenrepo-master.git']]])     
             }
         }
-  
+  stage('sonarQube'){
+    steps{
+       sh  "mvn clean sonar:sonar"
+         }
+   }
+   
+   stage('nexus'){
+    steps{
+       sh  "mvn clean deploy"
+         }
+   }
     // Building Docker images
     stage('Building image') {
       steps{
