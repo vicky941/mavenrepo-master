@@ -13,13 +13,13 @@ stages{
        sh  "mvn clean package"
          }
    }
-	/*
+	
    stage('sonarQube'){
     steps{
        sh  "mvn clean sonar:sonar"
          }
    }
-   
+   /*
    stage('nexus'){
     steps{
        sh  "mvn clean deploy"
