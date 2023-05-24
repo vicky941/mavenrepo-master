@@ -19,12 +19,10 @@ stages{
        sh  "mvn clean sonar:sonar"
          }
    }
-   /*
-   stage('nexus'){
+	stage('nexus_artifactupload'){
     steps{
-       sh  "mvn clean deploy"
-         }
-   }
-	*/
+	nexusArtifactUploader artifacts: [[artifactId: 'studentapp', classifier: '', file: 'target/studentapp-2.5-SNAPSHOT.war', type: 'war']], credentialsId: 'deployment', groupId: 'com.jdevs', nexusUrl: '34.216.148.245:8081', nexusVersion: 'nexus3', protocol: 'http', repository: 'student', version: '${env.BUILD_ID}'
+}
+}
 }
 }
