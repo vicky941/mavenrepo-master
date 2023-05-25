@@ -21,7 +21,7 @@ stages{
    }
  stage('NEXUS-UPLOAD ARTIFACT') {
             steps {
-              nexusArtifactUploader artifacts: [[artifactId: 'studentapp', classifier: '', file: 'target/studentapp-2.5-SNAPSHOT.war', type: 'war']], credentialsId: 'deployment', groupId: 'com.jdev', nexusUrl: '18.177.136.26:8081', nexusVersion: 'nexus3', protocol: 'http', repository: 'maven-snap', version: '2.5-SNAPSHOT'
+              nexusArtifactUploader artifacts: [[artifactId: 'studentapp', classifier: '', file: '/root/mavenrepo-master/target/studentapp-2.5-SNAPSHOT.war', type: 'war']], credentialsId: 'deployment', groupId: 'com.jdev', nexusUrl: '18.177.136.26:8081', nexusVersion: 'nexus3', protocol: 'http', repository: 'maven-snap', version: '2.5-SNAPSHOT'
         }
     }
 }
