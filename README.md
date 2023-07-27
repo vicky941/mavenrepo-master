@@ -7,7 +7,7 @@ the pre request are jenkins,sonar,maven,nexus,ECR and ECS
 
 
 
-#sudo chmod 666 /var/run/docker.sock
+#sudo chmod 666 /var/run/docker.sock                                                                                               
 #sudo chmod g+rw /var/run/docker.sock
 
 sudo service docker start
